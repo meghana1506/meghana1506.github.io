@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Favorite story</title>
+</head>
+<body style="background-color:lavender;">
+<p>
+<h1>Interesting Moral stories</h1>
+ <!-- table of my favorite stories-->
+ 
+
+<table>
+  <colgroup>
+    <col span="1"  >
+    <col style="background-color:ghostwhite">
+    <col style="background-color:ghostwhite">
+  </colgroup>
+  <tr>
+    <th>S.No</th>
+    <th>Title</th>
+    <th>Moral</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>The Turtle and the Hare</td>
+    <td>As long as you are steady and determined, you will always win, no matter what your speed is. Laziness is your enemy, as is pride.</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>The Sad Peacock</td>
+    <td>Self-acceptance is the first step to happiness. Make the best of what you have, rather than being unhappy about what you don’t</td>
+  </tr>
+</table>
+<!-- description of  story-->
+<h1>Here is the story of a peacock,let's begin our interesting story</h1>
+
+<p>Here is a wonderful story about a peacock </p>
+<p>here was this once a beautiful peacock who was all, but dancing on a rainy day. While he was busy admiring his plumage, his rough voice reminded him of his own shortcomings. All the joy beaten out of him, he was almost in tears. Suddenly, he heard a nightingale singing nearby.</p>
+<p>Listening to this nightingale’s sweet voice, his own shortcoming once again became very evident. He began wondering why he was jinxed in such a manner. At that moment, Juno, the leader of the Gods, appeared and addressed the peacock.</p>
+<p>“Why are you upset?” Juno asked the peacock.</p>
+<p>The peacock complained about his rough voice and how he was sad because of it. “The nightingale has such a beautiful voice. Why don’t I?”</p>
+<p>After listening to the peacock, Juno explained, “ every living being is special in his or her own way. They are and made in a certain manner that serves the greater purpose. Yes, the nightingale is blessed with a beautiful voice, but you are also blessed – with such a beautiful and glittering plumage! The trick is acceptance and making the most of what you have.”</p>
+<p>The peacock understood how silly he had been in comparing himself to others and forgetting his own blessings. He realised that day, that everyone was unique in some way or the other.</p>
+<h1>Now write your perspective moral</h1>
+<!-- knowing moral from reader's view-->
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="text">moral:</label>
+  <input type="text" id="text" name="text"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- email address for knowing readers favorite stories-->
+<h3>Send me your favorite stories to </h3>
+<address>
+written by <a href="mailto:meghnapothuri@gmail.com">Meghana</a>,
+India
+</address>
+<!--revealing actual moral again-->
+<p>Now Here is the moral for you</p>
+<button onclick="showContent()">moral</button>
+<template>
+<p> <h3> Moral of the story</h3></p>
+<p>Self-acceptance is the initial step to happiness. Make the best of what you have, rather than being unhappy about what you don’t.</p>
+
+</template>
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+
+</body>
